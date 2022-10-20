@@ -1,14 +1,16 @@
 import React from 'react'
+import Footer from '../../Components/Footer/index'
 import Header from '../../Components/Header/index'
 import Main from '../../Components/Main/index'
-import Footer from '../../Components/Footer/index'
 
 export default function Home(){
     return(
-        <section>
+        <div>
             <Header/>
             <Main/>
             <Footer/>
-        </section>
+        </div>
+          
+        
     );
 }

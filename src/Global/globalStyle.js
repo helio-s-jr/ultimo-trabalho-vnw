@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
+
 export const GlobalStyle = createGlobalStyle `
     *{
         margin: 0;
@@ -7,14 +8,8 @@ export const GlobalStyle = createGlobalStyle `
         border: 0;
         box-sizing: border-box;
     }
-
-    body{
-        background: #60696B;
-    }
-
-    main{
-        width: 30vh;
-        background-color: red;
+    .decohome, .decobio, .decoprojetos, .decosocial, .decocontatos{
+        text-decoration-line: none;
     }
 
 `
