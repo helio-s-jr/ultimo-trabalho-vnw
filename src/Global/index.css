@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Santana';
+    src: local('Santana'), url(../Assets/Fonts/Santana.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Ramadhan';
+    src: local('Ramadhan'), url(../Assets/Fonts/Ramadhan.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'TangoSans';
+    src: local('TangoSans'), url(../Assets/Fonts/TangoSans.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Amboqia';
+    src: local('Amboqia'), url(../Assets/Fonts/Amboqia.otf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Ananda';
+    src: local('Ananda'), url(../Assets/Fonts/Ananda.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Catalish';
+    src: local('Catalish'), url(../Assets/Fonts/Catalish.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Cream-Cake';
+    src: local('Cream-Cake'), url(../Assets/Fonts/Cream-Cake.otf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Ranille';
+    src: local('Ranille'), url(../Assets/Fonts/Ranille.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Ubuntu-title';
+    src: local('Ubuntu-title'), url(../Assets/Fonts/Ubuntu-Title.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'X_BAMBI';
+    src: local('X_BAMBI'), url(../Assets/Fonts/X_BAMBI.TTF) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'RachelBrown';
+    src: local('RachelBrown'), url(../Assets/Fonts/RachelBrown.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'Mogena';
+    src: local('Mogena'), url(../Assets/Fonts/Mogena.ttf) format('truetype');
+  }
+
+  @font-face{
+    font-family: 'FroadmileDEMO';
+    src: local('FroadmileDEMO'), url(../Assets/Fonts/FroadmileDEMO.ttf) format('truetype');
+  }

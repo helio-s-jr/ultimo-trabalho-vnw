@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import '../../Global/index.css'
 
 //Container da Header com Logo, nome e links das rotas
 export const ContainerHeader = styled.section`
@@ -56,7 +57,11 @@ export const TitleHeader = styled.h1`
     text-align: center;
     align-items: center;
     justify-content: start;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-family: Santana;
+    font-weight: 750;
+    letter-spacing: 0.3rem;
+    color: #8A038C;
     background-color: none;
 `
 
@@ -70,8 +75,3 @@ export const BarLink = styled.nav`
     text-decoration-line: none;
     background-color: none;
 `
-//Nomes das rotas
-export const P = styled.p`
-
-`
-

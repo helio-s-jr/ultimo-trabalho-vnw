@@ -2,66 +2,80 @@ import styled from 'styled-components'
 
 export const ContainerHome = styled.section`
 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background-color: #D6D6D6;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center:
+    align-items: center:
+    justify-content: center;
+    flex-direction: column;
+    max-width:1920px;
+    background-color: none;
 
 `
 
 export const ContainerMain = styled.section`
 
     width: 100%;
+    display: flex;
     height: 90vh;
     margin-top: 4px;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    display: flex;
     background-color: #737373;
 `
 
 export const SubtitleMainTop = styled.div`
 
-
-        Width: 100%;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        Justify-content: center;
-        background-color: none;
+    Width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    Justify-content: center;
+    background-color: none;
 `
-export const H2MainTop = styled.h2`
+export const H1MainTop = styled.h1`
 
-        width: 100%;
-        background-color: none;
+    width: 90%;
+    display: flex;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    font-weight: 550;
+    font-family: Ramadhan;
+    color: #D6D6D6;
+    background-color: none;
 `
 
 
 export const ContainerPerfilSkills = styled.section`
 
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: none;
+    width: 100%;
+    display: flex;
+    height: 65vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: none;
         
 `
 
 export const BoxPerfil = styled.figure`
 
-    width: 70%;
+    width: 40%;
     display: flex;
+    height: 50vh;
     align-items: center;
     justify-content: center;
-    background-color: none
+    background-color: none;
     
 `
 export const ImagePerfil = styled.img`
 
-    width: 35rem;
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,10 +88,15 @@ export const ImagePerfil = styled.img`
 
 export const ContainerSkills = styled.section`
 
-    width: 80%;
-    display: flex;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 250px 250px;
+    gap: 20px 20px 20px;
+    height: 55vh;
+    margin: 0 auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: none;
 
@@ -85,7 +104,7 @@ export const ContainerSkills = styled.section`
 
 export const BoxHtml5 = styled.figure`
 
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +113,7 @@ export const BoxHtml5 = styled.figure`
 `
 export const ImageHtml5 = styled.img`
 
-    width: 15rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +123,7 @@ export const ImageHtml5 = styled.img`
 
 export const BoxCss3 = styled.figure`
 
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +132,7 @@ export const BoxCss3 = styled.figure`
 `
 export const ImageCss3 = styled.img`
 
-    width: 15rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +143,7 @@ export const ImageCss3 = styled.img`
 
 export const BoxJavaScript = styled.figure`
 
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +152,7 @@ export const BoxJavaScript = styled.figure`
 `
 export const ImageJavaScript = styled.img`
 
-    width: 15rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +163,7 @@ export const ImageJavaScript = styled.img`
 
 export const BoxReactjs = styled.figure`
 
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,7 +172,7 @@ export const BoxReactjs = styled.figure`
 `
 export const ImageReactjs = styled.img`
 
-    width: 15rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;

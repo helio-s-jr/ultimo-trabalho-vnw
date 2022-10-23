@@ -16,7 +16,7 @@ export default function Home(){
             <Header/>
             <S.ContainerMain>
                 <S.SubtitleMainTop>
-                    <S.H2MainTop>Um desenvolvedor em desenvolvimento</S.H2MainTop>
+                    <S.H1MainTop>Um desenvolvedor em desenvolvimento</S.H1MainTop>
                 </S.SubtitleMainTop>
                 <S.ContainerPerfilSkills>
                     <S.BoxPerfil>
