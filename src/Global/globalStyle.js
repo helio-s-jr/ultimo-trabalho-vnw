@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle `
     }
 
     .imgs-footer:hover{
-        animation: shake 0.3s;
+        animation: shake 0.4s;
         
         animation-iteration-count: infinite;
     }
