@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 import * as S from './style'
 import Header from '../../Components/Header/index'
 import Footer from '../../Components/Footer/index'
@@ -10,55 +10,79 @@ import ImageSocial from '../../Assets/Perfil/Perfil-social/perfil-bio-social.jpg
 import StickerSocial from '../../Assets/Perfil/Perfil-social/Social.png'
 
 export default function Bio(){
+
+    const [administrative, setAdministrative] = useState(false)
+    const [driver, setDriver] = useState(false)
+    const [social, setSocial] = useState(false)
+
+    function ChangeAdministrative(){
+        setAdministrative(!administrative)
+    }
+
+    function ChangeDriver(){
+        setDriver(!driver)
+    }
+
+    function ChangeSocial(){
+        setSocial(!social)
+    }
+
+
     return(
         <div>
             <S.ContainerBio>
                 <Header/>
                 <S.ContainerMainBio>
                     <S.BoxH1MainBio>
-                        <h1>Olá! Me chamo Hélio Junior.</h1>
+                        <S.H1MainBio>Olá! Me chamo Helio Junior.</S.H1MainBio>
                     </S.BoxH1MainBio>
                     <S.ArticleAdm>
-                        <figure>
-                            <img src={ImageAdm} alt='Fotografia Helio Administrativo'/>
-                        </figure>
-                        <div>
-                            <h2>Esse é o subtítulo adm</h2>
-                            <p>Esse é onde conto um pouco da história</p>
-                            <p>Esse é onde conto um pouco da história</p>
-                            <p>Esse é onde conto um pouco da história</p>
-                        </div>
-                        <figure>
-                            <img src={StickerAdm} alt='Ilustração de logo administrativo'/>
-                        </figure>
+                        <S.BoxFigureTextsAdm>
+                            <S.FigureArtAdm>
+                                <S.ImageAdm src={ImageAdm} alt='Fotografia Helio Administrativo'/>
+                            </S.FigureArtAdm>
+                            <S.BoxSubParagAdm>
+                                <h2>Esse é o subtítulo adm</h2>
+                                <p>Esse é onde conto um pouco da história</p>
+                                <p>Esse é onde conto um pouco da história</p>
+                                <p>Esse é onde conto um pouco da história</p>
+                            </S.BoxSubParagAdm>
+                        </S.BoxFigureTextsAdm>
+                        <S.FigureStickerAdm>
+                            <S.ImageStickerAdm src={StickerAdm} alt='Ilustração de logo administrativo'/>
+                        </S.FigureStickerAdm>
                     </S.ArticleAdm>
                     <S.ArticleDriver>
-                        <figure>
-                            <img src={ImageDriver} alt='Fotografia Helio Motorista de Aplicativo'/>
-                        </figure>
-                        <div>
-                            <h2>Esse é o subtítulo motorista</h2>
-                            <p>Esse é onde conto um pouco da história</p>
-                            <p>Esse é onde conto um pouco da história</p>
-                            <p>Esse é onde conto um pouco da história</p>
-                        </div>
-                        <figure>
-                            <img src={StickerDriver} alt='Ilustração de logo motorista'/>
-                        </figure>
+                        <S.BoxFigureTextsDriver>
+                            <S.FigureArtDriver>
+                                <S.ImageDriver src={ImageDriver} alt='Fotografia Helio Motorista de Aplicativo'/>
+                            </S.FigureArtDriver>
+                            <S.BoxSubParagDriver>
+                                <h2>Esse é o subtítulo motorista</h2>
+                                <p>Esse é onde conto um pouco da história</p>
+                                <p>Esse é onde conto um pouco da história</p>
+                                <p>Esse é onde conto um pouco da história</p>
+                            </S.BoxSubParagDriver>
+                        </S.BoxFigureTextsDriver>
+                        <S.FigureStickerDriver>
+                            <S.ImageStickerDriver src={StickerDriver} alt='Ilustração de logo motorista'/>
+                        </S.FigureStickerDriver>
                     </S.ArticleDriver>
                     <S.ArticleSocial>
-                        <figure>
-                            <img src={ImageSocial} alt='Fotografia Helio Social'/>
-                        </figure>
-                        <div>
-                            <h2>Esse é o subtítulo Social</h2>
-                            <p>Esse é onde conto um pouco da história</p>
-                            <p>Esse é onde conto um pouco da história</p>
-                            <p>Esse é onde conto um pouco da história</p>
-                        </div>
-                        <figure>
-                            <img src={StickerSocial} alt='Ilustração de logo social'/>
-                        </figure>
+                        <S.BoxFigureTextsSocial>
+                            <S.FigureArtSocial>
+                                <S.ImageSocial src={ImageSocial} alt='Fotografia Helio Social'/>
+                            </S.FigureArtSocial>
+                            <S.BoxSubParagSocial>
+                                <h2>Esse é o subtítulo Social</h2>
+                                <p>Esse é onde conto um pouco da história</p>
+                                <p>Esse é onde conto um pouco da história</p>
+                                <p>Esse é onde conto um pouco da história</p>
+                            </S.BoxSubParagSocial>
+                        </S.BoxFigureTextsSocial>
+                        <S.FigureStickerSocial>
+                            <S.ImageStickerSocial src={StickerSocial} alt='Ilustração de logo social'/>
+                        </S.FigureStickerSocial>
                     </S.ArticleSocial>
                 </S.ContainerMainBio>
                 <Footer/>
