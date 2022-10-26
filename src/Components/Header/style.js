@@ -58,7 +58,7 @@ export const TitleHeader = styled.h1`
     align-items: center;
     justify-content: start;
     font-size: 1.5em;
-    font-family: Santana;
+    font-family: Ananda;
     font-weight: 750;
     letter-spacing: 0.3rem;
     color: #8A038C;

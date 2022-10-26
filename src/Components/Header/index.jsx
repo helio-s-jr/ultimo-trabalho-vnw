@@ -11,7 +11,7 @@ export default function Header(){
 				<S.BoxLogo>
 					<S.ImageLogo src={Logo} alt='Ilustração da Logo'/>
 				</S.BoxLogo>
-				<S.TitleHeader>Helio Jr.</S.TitleHeader>
+				<S.TitleHeader>&#10100;Helio Jr&bull;&#10101;</S.TitleHeader>
 			</S.ContainerLogoTitle>
 			
 			

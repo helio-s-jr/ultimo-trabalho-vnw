@@ -35,22 +35,15 @@ export const GlobalStyle = createGlobalStyle `
         opacity: 100%;
     }
 
+
     .imgs-footer:hover{
-        animation: shake 0.4s;
-        
-        animation-iteration-count: infinite;
+        cursor: pointer;
+        -webkit-animation: spin 0.5s linear infinite;
+        -moz-animation: spin 0.5s linear infinite;
+        animation: spin 0.5s linear infinite;
     }
-    @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        40% { transform: translate(1px, -1px) rotate(1deg); }
-        50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-      }
+    @-moz-keyframes spin {100%{-moz-transform: rotateY(360deg);}}
+    @-webkit-keyframes spin {100% {-webkit-transform: rotateY(360deg);}}
+    @keyframes spin {100% {-webkit-transform: rotateY(360deg); transform: rotateY(360deg);}}
+
 `

@@ -1,7 +1,11 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import * as S from './style'
 import Header from '../../Components/Header/index'
 import Footer from '../../Components/Footer/index'
+import Modal from 'react-modal'
+import Administrative from '../Bio/Perfil-Adm/index'
+import Driver from '../Bio/Perfil-Drive/index'
+import Social from '../Bio/Perfil-Social/index'
 import ImageAdm from '../../Assets/Perfil/Perfil-adm/perfil-bio-adm.jpg'
 import StickerAdm from '../../Assets/Perfil/Perfil-adm/Adm.png'
 import ImageDriver from '../../Assets/Perfil/Perfil-motorista/perfil-bio-motorista.jpg'
@@ -29,64 +33,99 @@ export default function Bio(){
 
 
     return(
-        <div>
-            <S.ContainerBio>
-                <Header/>
-                <S.ContainerMainBio>
-                    <S.BoxH1MainBio>
-                        <S.H1MainBio>Olá! Me chamo Helio Junior.</S.H1MainBio>
-                    </S.BoxH1MainBio>
-                    <S.ArticleAdm>
-                        <S.BoxFigureTextsAdm>
-                            <S.FigureArtAdm>
-                                <S.ImageAdm src={ImageAdm} alt='Fotografia Helio Administrativo'/>
-                            </S.FigureArtAdm>
-                            <S.BoxSubParagAdm>
-                                <h2>Esse é o subtítulo adm</h2>
-                                <p>Esse é onde conto um pouco da história</p>
-                                <p>Esse é onde conto um pouco da história</p>
-                                <p>Esse é onde conto um pouco da história</p>
-                            </S.BoxSubParagAdm>
-                        </S.BoxFigureTextsAdm>
-                        <S.FigureStickerAdm>
-                            <S.ImageStickerAdm src={StickerAdm} alt='Ilustração de logo administrativo'/>
-                        </S.FigureStickerAdm>
-                    </S.ArticleAdm>
-                    <S.ArticleDriver>
-                        <S.BoxFigureTextsDriver>
-                            <S.FigureArtDriver>
-                                <S.ImageDriver src={ImageDriver} alt='Fotografia Helio Motorista de Aplicativo'/>
-                            </S.FigureArtDriver>
-                            <S.BoxSubParagDriver>
-                                <h2>Esse é o subtítulo motorista</h2>
-                                <p>Esse é onde conto um pouco da história</p>
-                                <p>Esse é onde conto um pouco da história</p>
-                                <p>Esse é onde conto um pouco da história</p>
-                            </S.BoxSubParagDriver>
-                        </S.BoxFigureTextsDriver>
-                        <S.FigureStickerDriver>
-                            <S.ImageStickerDriver src={StickerDriver} alt='Ilustração de logo motorista'/>
-                        </S.FigureStickerDriver>
-                    </S.ArticleDriver>
-                    <S.ArticleSocial>
-                        <S.BoxFigureTextsSocial>
-                            <S.FigureArtSocial>
-                                <S.ImageSocial src={ImageSocial} alt='Fotografia Helio Social'/>
-                            </S.FigureArtSocial>
-                            <S.BoxSubParagSocial>
-                                <h2>Esse é o subtítulo Social</h2>
-                                <p>Esse é onde conto um pouco da história</p>
-                                <p>Esse é onde conto um pouco da história</p>
-                                <p>Esse é onde conto um pouco da história</p>
-                            </S.BoxSubParagSocial>
-                        </S.BoxFigureTextsSocial>
-                        <S.FigureStickerSocial>
-                            <S.ImageStickerSocial src={StickerSocial} alt='Ilustração de logo social'/>
-                        </S.FigureStickerSocial>
-                    </S.ArticleSocial>
-                </S.ContainerMainBio>
-                <Footer/>
-            </S.ContainerBio>
-        </div>
+        <S.ContainerBio>
+            <Header/>
+            <S.ContainerMainBio>
+                <S.BoxTitleSub>
+                    <S.TitleMainBio>Olá, me chamo Helio Junior</S.TitleMainBio>
+                    <S.SubTitleMainBio>E vou contar um pouco da minha trajetória profissional</S.SubTitleMainBio>
+                </S.BoxTitleSub>
+                <S.ContainerCardsBio>
+                    {/*Início do Card Administrativo*/}
+                    <S.CardAdm onClick={() =>{ChangeAdministrative()}}>
+                        <figure>
+                            <img src={ImageAdm} alt="Fogografia Helio Junior Administrativo" />
+                        </figure>
+                        <h2>Administrativo</h2>
+                        <Modal isOpen={administrative}
+                        onRequestClose={ChangeAdministrative}
+                        style={{overlay: {
+                            display: 'flex',
+                            margin: '0',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#8A038C'},
+                            content:{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                border: 'none',
+                                borderRadius: '40px',
+                                backgroundColor: '#D6D6D6'
+                            }
+                            }}>
+                                <Administrative close={ChangeAdministrative}/>
+                        </Modal>
+                        <img src={StickerAdm} alt="Ilustração Engranagem e Multiplos Check" />
+                    </S.CardAdm>
+
+                    
+                    {/*Início do Card Motorista*/}
+                    <section onClick={() =>{ChangeDriver()}}>
+                        <figure>
+                            <img src={ImageDriver} alt="Fogografia Helio Junior Motorista de Aplicativo" />
+                        </figure>
+                        <h2>Motorista</h2>
+                        <Modal isOpen={driver}
+                        onRequestClose={ChangeDriver}
+                        style={{overlay: {
+                            display: 'flex',
+                            margin: '0',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#8A038C'},
+                            content:{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                border: 'none',
+                                borderRadius: '40px',
+                                backgroundColor: '#D6D6D6'
+                            }
+                            }}>
+                                <Driver close={ChangeDriver}/>
+                        </Modal>
+                        <img src={StickerDriver} alt="Ilustração Celular e Carro de Aplicativo" />
+                    </section>
+
+
+                    {/*Início do Card Social*/}
+                    <section onClick={() =>{ChangeSocial()}}>
+                        <figure>
+                            <img src={ImageSocial} alt="Fogografia Helio Junior Informal" />
+                        </figure>
+                        <h2>Social</h2>
+                        <Modal isOpen={social}
+                        onRequestClose={ChangeSocial}
+                        style={{overlay: {
+                            display: 'flex',
+                            margin: '0',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#8A038C'},
+                            content:{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                border: 'none',
+                                borderRadius: '40px',
+                                backgroundColor: '#D6D6D6'
+                            }
+                            }}>
+                                <Social close={ChangeSocial}/>
+                        </Modal>
+                        <img src={StickerSocial} alt="Ilustração Pessoas Conversando" />
+                    </section>
+                </S.ContainerCardsBio>
+            </S.ContainerMainBio>
+            <Footer/>
+        </S.ContainerBio>
     );
 }
