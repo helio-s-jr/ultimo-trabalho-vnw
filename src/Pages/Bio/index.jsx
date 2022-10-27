@@ -43,86 +43,104 @@ export default function Bio(){
                 <S.ContainerCardsBio>
                     {/*Início do Card Administrativo*/}
                     <S.CardAdm onClick={() =>{ChangeAdministrative()}}>
-                        <figure>
-                            <img src={ImageAdm} alt="Fogografia Helio Junior Administrativo" />
-                        </figure>
-                        <h2>Administrativo</h2>
+                        <S.FigureCardAdm>
+                            <S.ImageAdm src={ImageAdm} alt="Fogografia Helio Junior Administrativo" />
+                        </S.FigureCardAdm>
+                        <S.H2CardAdm>Administrativo</S.H2CardAdm>
                         <Modal isOpen={administrative}
                         onRequestClose={ChangeAdministrative}
                         style={{overlay: {
+                            width: '80%',
                             display: 'flex',
-                            margin: '0',
+                            margin: '0 auto',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            backgroundColor: '#8A038C'},
+                            backgroundColor: 'rgba(138, 3, 140,0.7)'},
                             content:{
+                                width: '80%',
                                 display: 'flex',
+                                margin: '0 auto',
+                                alignItems: 'center',
                                 justifyContent: 'center',
                                 border: 'none',
                                 borderRadius: '40px',
-                                backgroundColor: '#D6D6D6'
+                                backgroundColor: 'rgba(214,214,214,0.7)'
                             }
                             }}>
                                 <Administrative close={ChangeAdministrative}/>
                         </Modal>
-                        <img src={StickerAdm} alt="Ilustração Engranagem e Multiplos Check" />
+                        <S.FigureStickerAdm>
+                            <S.StickerCardAdm src={StickerAdm} alt="Ilustração Engranagem e Multiplos Check" />
+                        </S.FigureStickerAdm>
                     </S.CardAdm>
 
                     
                     {/*Início do Card Motorista*/}
-                    <section onClick={() =>{ChangeDriver()}}>
-                        <figure>
-                            <img src={ImageDriver} alt="Fogografia Helio Junior Motorista de Aplicativo" />
-                        </figure>
-                        <h2>Motorista</h2>
+                    <S.CardDriver onClick={() =>{ChangeDriver()}}>
+                        <S.FigureCardDriver>
+                            <S.ImageDriver src={ImageDriver} alt="Fogografia Helio Junior Motorista de Aplicativo" />
+                        </S.FigureCardDriver>
+                        <S.H2CardDriver>Motorista</S.H2CardDriver>
                         <Modal isOpen={driver}
                         onRequestClose={ChangeDriver}
                         style={{overlay: {
+                            width: '80%',
                             display: 'flex',
-                            margin: '0',
+                            margin: '0 auto',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            backgroundColor: '#8A038C'},
+                            backgroundColor: 'rgba(138, 3, 140,0.7)'},
                             content:{
+                                width: '80%',
                                 display: 'flex',
+                                margin: '0 auto',
+                                alignItems: 'center',
                                 justifyContent: 'center',
                                 border: 'none',
                                 borderRadius: '40px',
-                                backgroundColor: '#D6D6D6'
+                                backgroundColor: 'rgba(214,214,214,0.7)'
                             }
                             }}>
                                 <Driver close={ChangeDriver}/>
                         </Modal>
-                        <img src={StickerDriver} alt="Ilustração Celular e Carro de Aplicativo" />
-                    </section>
+                        <S.FigureStickerDriver>
+                            <S.StickerCardDriver src={StickerDriver} alt="Ilustração Celular e Carro de Aplicativo" />
+                        </S.FigureStickerDriver>
+                    </S.CardDriver>
 
 
                     {/*Início do Card Social*/}
-                    <section onClick={() =>{ChangeSocial()}}>
-                        <figure>
-                            <img src={ImageSocial} alt="Fogografia Helio Junior Informal" />
-                        </figure>
-                        <h2>Social</h2>
+                    <S.CardSocial onClick={() =>{ChangeSocial()}}>
+                        <S.FigureCardSocial>
+                            <S.ImageSocial src={ImageSocial} alt="Fogografia Helio Junior Informal" />
+                        </S.FigureCardSocial>
+                        <S.H2CardSocial>Social</S.H2CardSocial>
                         <Modal isOpen={social}
                         onRequestClose={ChangeSocial}
                         style={{overlay: {
+                            width: '80%',
                             display: 'flex',
-                            margin: '0',
+                            margin: '0 auto',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            backgroundColor: '#8A038C'},
+                            backgroundColor: 'rgba(138, 3, 140,0.7)'},
                             content:{
+                                width: '80%',
                                 display: 'flex',
+                                margin: '0 auto',
+                                alignItems: 'center',
                                 justifyContent: 'center',
                                 border: 'none',
                                 borderRadius: '40px',
-                                backgroundColor: '#D6D6D6'
+                                backgroundColor: 'rgba(214,214,214,0.7)'
                             }
                             }}>
                                 <Social close={ChangeSocial}/>
                         </Modal>
-                        <img src={StickerSocial} alt="Ilustração Pessoas Conversando" />
-                    </section>
+                        <S.FigureStickerDriver>
+                            <S.StickerCardDriver src={StickerSocial} alt="Ilustração Pessoas Conversando" />
+                        </S.FigureStickerDriver>
+                    </S.CardSocial>
                 </S.ContainerCardsBio>
             </S.ContainerMainBio>
             <Footer/>

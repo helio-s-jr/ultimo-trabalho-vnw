@@ -1,19 +1,20 @@
 import React from 'react'
+import * as S from './style'
 
 
 export default function BioCardSocial(){
 
     return(
-        <section>
-            <section>
-                <h1>Vida Social</h1>
-                <div>
-                    <p>Parte social</p>
-                    <p>Parte social</p>
-                    <p>Parte social</p>
-                    <p>Parte social</p>
-                </div>
-            </section>
-        </section>
+        <S.ContainerCardSocial>
+            <S.ContainerMainSocial>
+                <S.H1Social>Administrativo</S.H1Social>
+                <S.BoxHistorySocial>
+                    <S.ParagrafsSocial>Minha trejetória na área administrativa</S.ParagrafsSocial>
+                    <S.ParagrafsSocial>Minha trejetória na área administrativa</S.ParagrafsSocial>
+                    <S.ParagrafsSocial>Minha trejetória na área administrativa</S.ParagrafsSocial>
+                    <S.ParagrafsSocial>Minha trejetória na área administrativa</S.ParagrafsSocial>
+                </S.BoxHistorySocial>
+            </S.ContainerMainSocial>
+        </S.ContainerCardSocial>
     );
 }
