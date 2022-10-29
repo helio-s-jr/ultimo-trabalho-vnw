@@ -3,13 +3,13 @@ import * as S from './style'
 import Header from '../../Components/Header/index'
 import Footer from '../../Components/Footer/index'
 import Modal from 'react-modal'
-//import ImageLittleKite from '../../Assets/Imagens-Biografia/Helio-crianca-pipa'
-/*import ImageLittleParty from '../../Assets/Imagens-Biografia/Helio-crianca-festa'
-import ImageFatherChildren from '../../Assets/Imagens-Biografia/Helio-pai'
-import ImageFatherDog from '../../Assets/Imagens-Biografia/Helio-pai-de-pet'
-import ImageBoyFriend from '../../Assets/Imagens-Biografia/Helio-namorado'
-import ImageMusician from '../../Assets/Imagens-Biografia/Helio-musico'
-import ImageReligion from '../../Assets/Imagens-Biografia/Helio-umbandista' */
+import ImageLittleKite from '../../Assets/Imagens-Biografia/Helio-crianca-pipa.jpg'
+import ImageLittleParty from '../../Assets/Imagens-Biografia/Helio-crianca-festa.jpg'
+import ImageFatherChildren from '../../Assets/Imagens-Biografia/Helio-pai.jpg'
+import ImageFatherDog from '../../Assets/Imagens-Biografia/Helio-pai-de-pet.jpg'
+//import ImageBoyFriend from '../../Assets/Imagens-Biografia/Helio-namorado.jpg'
+//import ImageMusician from '../../Assets/Imagens-Biografia/Helio-musico.jpg'
+//import ImageReligion from '../../Assets/Imagens-Biografia/Helio-umbandista.jpg'
 import Administrative from '../Bio/Perfil-Adm/index'
 import Driver from '../Bio/Perfil-Drive/index'
 import Social from '../Bio/Perfil-Social/index'
@@ -45,14 +45,34 @@ export default function Bio(){
             <S.ContainerMainBio>
                 <S.BoxTitleSub>
                     <S.TitleMainBio>Olá, me chamo Helio Junior</S.TitleMainBio>
-                    <S.SubTitleMainBio>E sejam muito bem vindos.</S.SubTitleMainBio>
+                    <S.SubTitleMainBio>Sejam muito bem vindos!</S.SubTitleMainBio>
                 </S.BoxTitleSub>
-                {/* <S.ArticleInfanciaMainBio>
-                    <S.ParagrafsArticleBio>ubabjebvkbv</S.ParagrafsArticleBio>
-                    <S.ParagrafsArticleBio>kdhvhkbvkjbjkvbjkv</S.ParagrafsArticleBio>
-                    <S.ParagrafsArticleBio>LVBKWRVBKBVKJW</S.ParagrafsArticleBio>
-                    <S.ImageLittleKite src={ImageLittleKite} alt="Fotografia Helio Junior criança com pipa na mão" />
-                </S.ArticleInfanciaMainBio> */}
+                <S.ContainerArticleBio>
+                    <S.ArticleInfanciaMainBio>
+                        <S.ParagrafsArticleBio>Nascido em 1988, direto da zona oeste do Rio de Janeiro e filho de um segurança e uma empregada doméstica, sempre usa da própria criantivade para poder brincar e me divertir mesmo que sozinho.</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Infância rica de brincadeiras que hoje em dia não se tem mais, passava hora criando desenhos, aviãozinho de palito de fósforo e fingindo ser motorista de ônibus com um volante velho.</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Passei pelos anos 90 e 2000 curtindo o que todos curtiam com a antiga Rede Manchete, Cavaleiros do Zodíaco e posteriormente a Tv Globinho.</S.ParagrafsArticleBio>
+                        <S.ImageLittleKite src={ImageLittleKite} alt="Fotografia Helio Junior criança com pipa na mão" />
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                        <S.ImageLittleParty src={ImageLittleParty} alt="Fotografia Helio Junior criança em festa junina" />
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                    </S.ArticleInfanciaMainBio>
+                    
+                    {/* Artigo com filhos */}
+                    <S.ArticleFatherMainBio>
+                        <S.ParagrafsArticleBio>Nascido em 1988, direto da zona oeste do Rio de Janeiro e filho de um segurança e uma empregada doméstica, sempre usa da própria criantivade para poder brincar e me divertir mesmo que sozinho.</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Infância rica de brincadeiras que hoje em dia não se tem mais, passava hora criando desenhos, aviãozinho de palito de fósforo e fingindo ser motorista de ônibus com um volante velho.</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Passei pelos anos 90 e 2000 curtindo o que todos curtiam com a antiga Rede Manchete, Cavaleiros do Zodíaco e posteriormente a Tv Globinho.</S.ParagrafsArticleBio>
+                        <S.ImageFatherChildren src={ImageFatherChildren} alt="Fotografia Helio Junior com seus filhos e namorada" />
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                        <S.ImageFatherDog src={ImageFatherDog} alt="Fotografia Helio Junior com seu cachorro" />
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                        <S.ParagrafsArticleBio>Estudando 100% da vida em escolas públicas, tive o privilégio de conhecer o ensino de melhor qualidade me foi apresentado</S.ParagrafsArticleBio>
+                    </S.ArticleFatherMainBio>
+                </S.ContainerArticleBio>
                 
                 <S.ContainerCardsBio>
                     {/*Início do Card Administrativo*/}

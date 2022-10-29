@@ -61,11 +61,25 @@ export const SubTitleMainBio = styled.h3`
     color: #D6D6D6;
     background-color: none;
 `
+export const ContainerArticleBio = styled.section`
 
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+`
 export const ArticleInfanciaMainBio = styled.article`
 
     width: 100%;
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: yellow;
 `
 export const ParagrafsArticleBio = styled.p`
 
@@ -74,18 +88,40 @@ export const ParagrafsArticleBio = styled.p`
 `
 export const ImageLittleKite = styled.img`
 
-    width: 10rem;
+    width: 15rem;
+`
+export const ImageLittleParty = styled.img`
+
+    width: 15rem;
+`
+export const ArticleFatherMainBio = styled.article`
+
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: green;
+`
+export const ImageFatherChildren = styled.img`
+
+    width: 15rem;
+`
+export const ImageFatherDog = styled.img`
+
+    width: 15rem;
 `
 
 export const ContainerCardsBio = styled.section`
 
     width: 100%;
-    height: 350vh;
+    height: 90vh;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     background-color: none;
 `
@@ -101,6 +137,7 @@ export const CardAdm = styled.section`
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    cursor: pointer;
     border: 2px solid #8A038C;
     border-radius: 80px;
     border: -moz-box-shadow: 0px 20px 30px #8A038C;
@@ -161,13 +198,14 @@ export const StickerCardAdm = styled.img`
 //Card Motorista
 export const CardDriver = styled.section`
 
-    width: 45%;
-    height: 100vh;
+    width: 20%;
+    height: 60vh;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    cursor: pointer;
     border: 2px solid #8A038C;
     border-radius: 80px;
     border: -moz-box-shadow: 0px 20px 30px #8A038C;
@@ -176,7 +214,7 @@ export const CardDriver = styled.section`
 `
 export const FigureCardDriver = styled.figure`
 
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -186,7 +224,7 @@ export const FigureCardDriver = styled.figure`
 `
 export const ImageDriver = styled.img`
 
-    width: 15rem;
+    width: 7rem;
     display: flex;
     align-items: center;
     border-radius: 150px;
@@ -199,7 +237,7 @@ export const H2CardDriver = styled.h2`
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 8em;
+    font-size: 4em;
     font-family: Cream-Cake;
     font-weight: 400;
     color: #8A038C;
@@ -208,7 +246,7 @@ export const H2CardDriver = styled.h2`
 
 export const FigureStickerDriver = styled.figure`
 
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -218,7 +256,7 @@ export const FigureStickerDriver = styled.figure`
 `
 export const StickerCardDriver = styled.img`
 
-    width: 10rem;
+    width: 5rem;
     display: flex;
     align-items: center;
 `
@@ -229,13 +267,14 @@ export const StickerCardDriver = styled.img`
 //Card Social
 export const CardSocial = styled.section`
 
-    width: 45%;
-    height: 100vh;
+    width: 20%;
+    height: 60vh;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    cursor: pointer;
     border: 2px solid #8A038C;
     border-radius: 80px;
     border: -moz-box-shadow: 0px 20px 30px #8A038C;
@@ -244,7 +283,7 @@ export const CardSocial = styled.section`
 `
 export const FigureCardSocial = styled.figure`
 
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -254,7 +293,7 @@ export const FigureCardSocial = styled.figure`
 `
 export const ImageSocial = styled.img`
 
-    width: 15rem;
+    width: 7rem;
     display: flex;
     align-items: center;
     border-radius: 150px;
@@ -267,7 +306,7 @@ export const H2CardSocial = styled.h2`
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 8em;
+    font-size: 4em;
     font-family: Cream-Cake;
     font-weight: 400;
     color: #8A038C;
@@ -276,7 +315,7 @@ export const H2CardSocial = styled.h2`
 
 export const FigureStickerSocial = styled.figure`
 
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -286,7 +325,7 @@ export const FigureStickerSocial = styled.figure`
 `
 export const StickerCardSocial = styled.img`
 
-    width: 10rem;
+    width: 5rem;
     display: flex;
     align-items: center;
 `

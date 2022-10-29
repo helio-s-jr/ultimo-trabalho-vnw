@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContainerFooter = styled.section`
 
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     display: flex;
     margin: auto;
     text-align: center;
