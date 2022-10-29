@@ -3,6 +3,13 @@ import * as S from './style'
 import Header from '../../Components/Header/index'
 import Footer from '../../Components/Footer/index'
 import Modal from 'react-modal'
+//import ImageLittleKite from '../../Assets/Imagens-Biografia/Helio-crianca-pipa'
+/*import ImageLittleParty from '../../Assets/Imagens-Biografia/Helio-crianca-festa'
+import ImageFatherChildren from '../../Assets/Imagens-Biografia/Helio-pai'
+import ImageFatherDog from '../../Assets/Imagens-Biografia/Helio-pai-de-pet'
+import ImageBoyFriend from '../../Assets/Imagens-Biografia/Helio-namorado'
+import ImageMusician from '../../Assets/Imagens-Biografia/Helio-musico'
+import ImageReligion from '../../Assets/Imagens-Biografia/Helio-umbandista' */
 import Administrative from '../Bio/Perfil-Adm/index'
 import Driver from '../Bio/Perfil-Drive/index'
 import Social from '../Bio/Perfil-Social/index'
@@ -38,19 +45,26 @@ export default function Bio(){
             <S.ContainerMainBio>
                 <S.BoxTitleSub>
                     <S.TitleMainBio>Olá, me chamo Helio Junior</S.TitleMainBio>
-                    <S.SubTitleMainBio>E vou contar um pouco da minha trajetória profissional</S.SubTitleMainBio>
+                    <S.SubTitleMainBio>E sejam muito bem vindos.</S.SubTitleMainBio>
                 </S.BoxTitleSub>
+                {/* <S.ArticleInfanciaMainBio>
+                    <S.ParagrafsArticleBio>ubabjebvkbv</S.ParagrafsArticleBio>
+                    <S.ParagrafsArticleBio>kdhvhkbvkjbjkvbjkv</S.ParagrafsArticleBio>
+                    <S.ParagrafsArticleBio>LVBKWRVBKBVKJW</S.ParagrafsArticleBio>
+                    <S.ImageLittleKite src={ImageLittleKite} alt="Fotografia Helio Junior criança com pipa na mão" />
+                </S.ArticleInfanciaMainBio> */}
+                
                 <S.ContainerCardsBio>
                     {/*Início do Card Administrativo*/}
                     <S.CardAdm onClick={() =>{ChangeAdministrative()}}>
                         <S.FigureCardAdm>
-                            <S.ImageAdm src={ImageAdm} alt="Fogografia Helio Junior Administrativo" />
+                            <S.ImageAdm src={ImageAdm} alt="Fotografia Helio Junior Administrativo" />
                         </S.FigureCardAdm>
                         <S.H2CardAdm>Administrativo</S.H2CardAdm>
                         <Modal isOpen={administrative}
                         onRequestClose={ChangeAdministrative}
                         style={{overlay: {
-                            width: '80%',
+                            width: '100%',
                             display: 'flex',
                             margin: '0 auto',
                             alignItems: 'center',
@@ -78,13 +92,13 @@ export default function Bio(){
                     {/*Início do Card Motorista*/}
                     <S.CardDriver onClick={() =>{ChangeDriver()}}>
                         <S.FigureCardDriver>
-                            <S.ImageDriver src={ImageDriver} alt="Fogografia Helio Junior Motorista de Aplicativo" />
+                            <S.ImageDriver src={ImageDriver} alt="Fotografia Helio Junior Motorista de Aplicativo" />
                         </S.FigureCardDriver>
                         <S.H2CardDriver>Motorista</S.H2CardDriver>
                         <Modal isOpen={driver}
                         onRequestClose={ChangeDriver}
                         style={{overlay: {
-                            width: '80%',
+                            width: '100%',
                             display: 'flex',
                             margin: '0 auto',
                             alignItems: 'center',
@@ -112,13 +126,13 @@ export default function Bio(){
                     {/*Início do Card Social*/}
                     <S.CardSocial onClick={() =>{ChangeSocial()}}>
                         <S.FigureCardSocial>
-                            <S.ImageSocial src={ImageSocial} alt="Fogografia Helio Junior Informal" />
+                            <S.ImageSocial src={ImageSocial} alt="Fotografia Helio Junior Informal" />
                         </S.FigureCardSocial>
                         <S.H2CardSocial>Social</S.H2CardSocial>
                         <Modal isOpen={social}
                         onRequestClose={ChangeSocial}
                         style={{overlay: {
-                            width: '80%',
+                            width: '100%',
                             display: 'flex',
                             margin: '0 auto',
                             alignItems: 'center',

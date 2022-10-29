@@ -42,7 +42,7 @@ export const TitleMainBio = styled.h1`
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 3.5em;
+    font-size: 3.2em;
     font-weight: 550;
     font-family: sans-serif;
     color: #D6D6D6;
@@ -55,11 +55,26 @@ export const SubTitleMainBio = styled.h3`
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 550;
     font-family: sans-serif;
     color: #D6D6D6;
     background-color: none;
+`
+
+export const ArticleInfanciaMainBio = styled.article`
+
+    width: 100%;
+    display: flex;
+`
+export const ParagrafsArticleBio = styled.p`
+
+    width: 100%;
+    display: flex;
+`
+export const ImageLittleKite = styled.img`
+
+    width: 10rem;
 `
 
 export const ContainerCardsBio = styled.section`
@@ -79,8 +94,8 @@ export const ContainerCardsBio = styled.section`
 //Card Administrativo
 export const CardAdm = styled.section`
 
-    width: 45%;
-    height: 100vh;
+    width: 20%;
+    height: 60vh;
     display: flex;
     text-align: center;
     align-items: center;
@@ -94,7 +109,7 @@ export const CardAdm = styled.section`
 `
 export const FigureCardAdm = styled.figure`
 
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -104,7 +119,7 @@ export const FigureCardAdm = styled.figure`
 `
 export const ImageAdm = styled.img`
 
-    width: 15rem;
+    width: 7rem;
     display: flex;
     align-items: center;
     border-radius: 150px;
@@ -117,7 +132,7 @@ export const H2CardAdm = styled.h2`
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 8em;
+    font-size: 4em;
     font-family: Cream-Cake;
     font-weight: 400;
     color: #8A038C;
@@ -126,7 +141,7 @@ export const H2CardAdm = styled.h2`
 
 export const FigureStickerAdm = styled.figure`
 
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     text-align: center;
@@ -136,7 +151,7 @@ export const FigureStickerAdm = styled.figure`
 `
 export const StickerCardAdm = styled.img`
 
-    width: 10rem;
+    width: 5rem;
     display: flex;
     align-items: center;
 `
