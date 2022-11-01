@@ -41,10 +41,11 @@ export const H1MainTop = styled.h1`
     display: flex;
     height: 15vh;
     text-align: center;
+    text-shadow: 4px 5px #8A038C;
     align-items: center;
     justify-content: center;
     font-size: 6em;
-    font-weight: 550;
+    font-weight: 300;
     font-family: Ramadhan;
     color: #D6D6D6;
     background-color: none;

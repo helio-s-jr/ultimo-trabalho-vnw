@@ -14,7 +14,7 @@ export const ContainerBio = styled.section`
 export const ContainerMainBio = styled.section`
 
     width: 100%;
-    height: 500vh;
+    height: 550vh;
     display: flex;
     margin-top: 4px;
     text-align: center;
@@ -40,6 +40,7 @@ export const TitleMainBio = styled.h1`
     width: 100%;
     display: flex;
     text-align: center;
+    text-shadow: 4px 5px #8A038C;
     align-items: center;
     justify-content: center;
     font-size: 3.2em;
@@ -53,6 +54,7 @@ export const SubTitleMainBio = styled.h3`
     width: 100%;
     display: flex;
     text-align: center;
+    text-shadow: 4px 5px #8A038C;
     align-items: center;
     justify-content: center;
     font-size: 2.3em;
@@ -67,7 +69,7 @@ export const SubTitleMainBio = styled.h3`
 export const ContainerArticleBio = styled.section`
 
     width: 100%;
-    height: 350vh;
+    height: 400vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -87,7 +89,7 @@ export const ArticleKiteBio = styled.article`
     flex-direction: row;
     background-color: none;
 `
-export const FigureLittleKite = styled.figure`
+export const FigureBio = styled.figure`
 
     width: 30%;
     align-items: center;
@@ -95,18 +97,18 @@ export const FigureLittleKite = styled.figure`
     background-color: none;
 
 `
-export const ImageLittleKite = styled.img`
+export const ImageBio = styled.img`
 
     width: 20rem;
     align-items: center;
     justify-content: center;
-    border-radius: 150px;
+    border-radius: 100px;
     border: -moz-box-shadow: 0px 20px 30px #8A038C;
     -webkit-box-shadow: 0px 0px 25px #8A038C;
 `
 export const BoxParagrafs = styled.div`
 
-    width: 65%;
+    width: 70%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -116,7 +118,7 @@ export const BoxParagrafs = styled.div`
 export const ParagrafsBio = styled.p`
 
     width: 100%;
-    height: 18vh;
+    height: 12vh;
     display: flex;
     text-align: justify;
     align-items: center;
@@ -140,23 +142,6 @@ export const ArticleLittleParty = styled.article`
     flex-direction: row-reverse;
     background-color: none;
 `
-export const FigureLittleParty = styled.figure`
-
-    width: 30%;
-    align-items: center;
-    justify-content: start;
-    background-color: none;
-`
-export const ImageLittleParty = styled.img`
-
-    width: 20rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 150px;
-    border: -moz-box-shadow: 0px 20px 30px #8A038C;
-    -webkit-box-shadow: 0px 0px 25px #8A038C;
-`
-
 
 //Artigo com imagens com filhos
 export const ArticleFather = styled.article`
@@ -169,22 +154,6 @@ export const ArticleFather = styled.article`
     justify-content: space-evenly;
     flex-direction: row;
     background-color: none;
-`
-export const FigureFather = styled.figure`
-
-    width: 30%;
-    align-items: center;
-    justify-content: start;
-    background-color: none;
-`
-export const ImageFather = styled.img`
-
-    width: 20rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 150px;
-    border: -moz-box-shadow: 0px 20px 30px #8A038C;
-    -webkit-box-shadow: 0px 0px 25px #8A038C;
 `
 
 //Artigo com imagem do cachorro
@@ -199,82 +168,45 @@ export const ArticleDog = styled.article`
     flex-direction: row-reverse;
     background-color: none;
 `
-export const FigureFatherDog = styled.figure`
-
-    width: 30%;
-    align-items: center;
-    justify-content: start;
-    background-color: none; 
-`
-export const ImageFatherDog = styled.img`
-
-    width: 20rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 150px;
-    border: -moz-box-shadow: 0px 20px 30px #8A038C;
-    -webkit-box-shadow: 0px 0px 25px #8A038C;
-`
 
 
 //Artigo com imagem tocando
 export const ArticleMusic = styled.article`
 
     width: 80%;
+    height: 80vh;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
-    background-color: green;
-`
-export const FigureMusic = styled.figure`
-
-    width: 40%;
-`
-export const ImageMusic = styled.img`
-
-    width: 15rem;    
+    background-color: none;
 `
 
 //Artigo com imagem Umbanda
 export const ArticleUmbanda = styled.article`
 
     width: 80%;
+    height: 80vh;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row-reverse;
-    background-color: green;
-`
-export const FigureUmbanda = styled.figure`
-
-    width: 40%;
-`
-export const ImageUmbanda = styled.img`
-
-    width: 15rem;    
+    background-color: none;
 `
 
 //Artigo com imagem Namorada
 export const ArticleGirlFriend = styled.article`
 
     width: 80%;
+    height: 80vh;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
-    background-color: green;
-`
-export const FigureGirlFriend = styled.figure`
-
-    width: 40%;
-`
-export const ImageGirlFriend = styled.img`
-
-    width: 15rem;    
+    background-color: none;
 `
 
 
