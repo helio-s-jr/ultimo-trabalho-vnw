@@ -4,10 +4,12 @@ import Footer from '../../Components/Footer/index'
 
 export default function Projetos(){
     return(
-        <div>
-            <Header/>
-            <h1>Página dos projetos</h1>
-            <Footer/>
-        </div>
+        <section>
+                <Header/>
+                <section>
+                    <h1>Página em construção</h1>
+                </section>
+                <Footer/>
+        </section>
     );
 }
