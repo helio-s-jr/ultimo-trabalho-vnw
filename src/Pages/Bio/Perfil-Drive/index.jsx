@@ -2,10 +2,11 @@ import React from 'react'
 import * as S from './style'
 
 
-export default function BioCardDrive(){
+export default function BioCardDrive(Close){
 
     return(
         <S.ContainerCardDriver>
+            <S.ButtonDriver onClink={Close}>X</S.ButtonDriver>
             <S.ContainerMainDriver>
                 <S.H1Driver>Administrativo</S.H1Driver>
                 <S.BoxHistoryDriver>

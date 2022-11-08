@@ -1,13 +1,16 @@
 import React from 'react'
+import * as S from './style'
 import Header from '../../Components/Header/index'
 import Footer from '../../Components/Footer/index'
 
 export default function Contatos(){
     return(
-        <div>
+        <S.ContainerContacts>
             <Header/>
-            <h1>Pagina para todos os contatos</h1>
+            <S.ContainerMainContacts>
+                <h1>Pagina para todos os contatos</h1>
+            </S.ContainerMainContacts>
             <Footer/>
-        </div>
+        </S.ContainerContacts>
     );
 }

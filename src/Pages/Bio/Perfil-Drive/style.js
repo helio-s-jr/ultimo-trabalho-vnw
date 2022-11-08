@@ -21,6 +21,24 @@ export const ContainerMainDriver = styled.section`
     flex-direction: column;
     background-color: green;
 `
+
+export const ButtonDriver = styled.button`
+
+    width: 2%;
+    height: 3vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #8A038C;
+    background-color: transparent;
+`
+
 export const H1Driver = styled.h1`
 
     width: 100%;

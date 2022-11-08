@@ -1,10 +1,11 @@
 import React from 'react'
 import * as S from './style'
 
-export default function BioCardAdm(){
+export default function BioCardAdm({Close}){
 
     return(
         <S.ContainerCardAdm>
+            <S.ButtonAdm onClink={Close}>X</S.ButtonAdm>
             <S.H1Adm>Administrativo</S.H1Adm>
             <S.BoxHistoryAdm>
                 <S.ParagrafsAdm>Minha vida profissional na área administrativa começou lá em 2010. Antes disso já trabalhei como auxiliar de servicços gerais e frestista num posto de gasolina próximo da minha casa.</S.ParagrafsAdm>
