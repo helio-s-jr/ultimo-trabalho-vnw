@@ -4,7 +4,7 @@ import Home from '../Pages/Home'
 import Bio from '../Pages/Bio'
 import Projetos from '../Pages/Projetos'
 import Social from '../Pages/Social'
-import Contatos from '../Pages/Contatos'
+import Contato from '../Pages/Contato'
 
 export default function Rotas(){
     return(
@@ -14,7 +14,7 @@ export default function Rotas(){
                 <Route path='/bio' element={<Bio/>}/>
                 <Route path='/projetos' element={<Projetos/>}/>
                 <Route path='/social' element={<Social/>}/>
-                <Route path='/contatos' element={<Contatos/>}/>
+                <Route path='/contato' element={<Contato/>}/>
             </Routes>
         </Router>
     );

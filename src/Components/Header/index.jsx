@@ -20,7 +20,7 @@ export default function Header(){
 				<Link class="link-header" to='/bio'><p class='p-header'>Biografia</p></Link>
 				<Link class="link-header" to='/projetos'><p class='p-header'>Projetos</p></Link>
 				<Link class="link-header" to='/social'><p class='p-header'>Social</p></Link>
-				<Link class="link-header" to='/contatos'><p class='p-header'>Contatos</p></Link>
+				<Link class="link-header" to='/contato'><p class='p-header'>Contato</p></Link>
 			</S.BarLink>
 		</S.ContainerHeader>
 		
