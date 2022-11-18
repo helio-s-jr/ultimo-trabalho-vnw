@@ -23,15 +23,17 @@ export default function Contato(){
             message: message,
             email: email
         }
-        emailjs.send('service_2obj23u', 'template_i64h2ym','templateParams', '7s9t5arp0PeGjrtiw')
+        emailjs.send('service_2obj23u','template_i64h2ym','templateParams', '7s9t5arp0PeGjrtiw')
         .then((response)=>{
-            console.log('EMAIL ENVIADO', response.status, response.text)
+            console.log('Email Enviado', response.status, response.text),
             setName(''),
             setEmail(''),
             setMessage('')
         }, (err) => {
             console.log('Erro: ', err)
         })
+
+        alert('Email enviado com sucesso. Obrigado!')
     }
 
     return(
